@@ -18,8 +18,8 @@ Course:     SA115X Degree Project in Vehicle Engineering,
             First Level, 15.0 Credits, KTH
 Project:    Implementation and Optimisation of a Neural Network
             Spring 2021, KTH, Stockholm 
-GitHub:     https://gits-15.sys.kth.se/aboivie/neuralNetwork
-Last modified 2021/04/14 by AB
+GitHub:     https://github.com/axeboii/NeuralNetwork_SA115X
+Last modified 2021/04/19 by AB
 """
 
 import os
