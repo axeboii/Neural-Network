@@ -14,8 +14,9 @@
 %
 %  Project: Implementation and Optimisation of a Neural Network
 %           Spring 2021, KTH, Stockholm
-% 
-%  Last modified 2021/04/14 by AB
+%
+%  GitHub:  https://github.com/axeboii/NeuralNetwork_SA115X
+%  Last modified 2021/04/19 by AB
 
 %% 1. Plot with different learning rates
 close all;clear;
