@@ -1,2 +1,3 @@
 # NeuralNetwork_SA115X
-A folder containing files of an implementation of a neural network in python, the main files of a project in course SA115X, KTH.
+This repository contains files associated with Degree Project in Vehicle Engineering "Implementation and Optimisation of a Neural Network".
+Authors: Axel Boivie <aboivie@kth.se>, Victor Bellander <vicbel@kth.se>
