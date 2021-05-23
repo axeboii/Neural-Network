@@ -3,14 +3,14 @@ import numpy as np
 from Helpfuncs import Helpfuncs as hf
 import math
 
-# Global variables
+# Global variables, feel free to change any of these
 SIZES = [28*28, 32, 10]     # Number of nodes in: [input layer, hidden layer, ... , output layer]
-EPOCHS = 10
-BATCH_SIZE = 16
-USED_SHARE_OF_DATA = 0.1    # fraction of images to be treated in each epoch
-END_LEARNING_RATE = 0.1     # for piecewiseConstantDecay
-WEIGHT_BOUND = math.pow(6/(SIZES[0]+SIZES[-1]), 0.5)
-BIAS_BOUND = 0
+EPOCHS = 10                 # Number of times the network is trained
+BATCH_SIZE = 16             # Number of images treated in each step in SGD
+USED_SHARE_OF_DATA = 0.1    # Fraction of images to be treated in each epoch 
+WEIGHT_BOUND = math.pow(6/(SIZES[0]+SIZES[-1]), 0.5) # Glorot initialization
+BIAS_BOUND = 0              # Initialization for biases
+END_LEARNING_RATE = 0.1     # Parameter for piecewiseConstantDecay
 
 # A class representing a Neural Network
 class Network:

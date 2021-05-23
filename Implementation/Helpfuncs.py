@@ -5,18 +5,18 @@ import statistics
 # Helpfuncs contain functions to assist the neural network
 class Helpfuncs:
     # Tests the network with test images
-    def test(NN, numOfPredicts, test_X, test_y):
+    def test(NN, test_X, test_y):
         correct = 0
-        for i in range(0,numOfPredicts):
+        for i in range(0,len(test_X)):
             predictionVec = NN.predict(test_X[i])
             prediction = max(predictionVec)
             index = predictionVec.index(prediction)
             if (index == int(test_y[i])):
                 correct += 1
-        acc =  round(correct/numOfPredicts,4)
+        acc =  round(correct/len(test_X),4)
         print('Testing accuracy: ', acc)
         return acc
-    # Turns inputmatrix into vector
+    # Sorts matrix into vector
     def flatten(matrix):
         rows = len(matrix)
         columns = len(matrix[0])

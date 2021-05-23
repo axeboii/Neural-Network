@@ -19,7 +19,7 @@ Course:     SA115X Degree Project in Vehicle Engineering,
 Project:    Implementation and Optimisation of a Neural Network
             Spring 2021, KTH, Stockholm 
 GitHub:     https://github.com/axeboii/NeuralNetwork_SA115X
-Last modified 2021/04/19 by AB
+Last modified 2021/05/23 by AB
 """
 
 import os
@@ -38,12 +38,14 @@ def main():
     schemes = ["No stepping scheme", "exponentialDecay", "inverseTimeDecay", "piecewiseConstantDecay", "polynomialDecay", "ADAM"]
     learningRates = [0.3, 0.5, 0.5, 0.3, 0.3, 0.003]
     decayRates = [0, 0.75, 0.5, 0, 2.5, 0]
+    # Pick scheme 0-5 for 0: No scheme, 1: ed, 2: itd, 3: pcd, 4: pd, 5: ADAM
     schemeVariant = 5
-    # Create, train and test network
+    # Create the network
     NN = Network()
+    # Train the network
     NN.train(train_X, train_y, test_X, test_y, schemes[schemeVariant], learningRates[schemeVariant], decayRates[schemeVariant])
-    hf.test(NN, 10000, test_X, test_y)
-
+    # Test the network
+    hf.test(NN, test_X, test_y)
 
 if __name__ == '__main__':
     main()
